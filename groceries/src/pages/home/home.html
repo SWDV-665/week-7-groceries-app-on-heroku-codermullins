@@ -1,49 +1,33 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Grocery List</ion-title>
+    <ion-title>{{title}}</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-list>
-    <ion-item-sliding>
+    <ion-item-sliding *ngFor="let item of items; let i = index">
       <ion-item>
-        <h2>Milk</h2>
-        <p>Dairy</p>
-        <p>1</p>
+        <h2>{{item.name}}</h2>
+        <p>{{item.section}}</p>
+        <p>{{item.quantity}}</p>
       </ion-item>
       <ion-item-options>
-        <button ion-button color="primary">
-          <ion-icon name="trash"></ion-icon>
-          Delete
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <h2>Steaks</h2>
-        <p>Meat</p>
-        <p>4</p>
-      </ion-item>
-      <ion-item-options>
-        <button ion-button color="primary">
-          <ion-icon name="trash"></ion-icon>
-          Delete
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <h2>Rice</h2>
-        <p>International</p>
-        <p>5</p>
-      </ion-item>
-      <ion-item-options>
-        <button ion-button color="primary">
+        <button
+          ion-button
+          color="primary"
+          type="button"
+          (click)="deleteItem(item, i)"
+        >
           <ion-icon name="trash"></ion-icon>
           Delete
         </button>
       </ion-item-options>
     </ion-item-sliding>
   </ion-list>
+  <ion-fab right bottom>
+    <button ion-fab mini (click)="addItem()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
 </ion-content>

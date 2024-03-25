@@ -63,7 +63,7 @@ var TabsPage = /** @class */ (function () {
         this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-2-groceries-app-skeleton-codermullins\groceries\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n  <ion-tab [root]="tab1Root" tabTitle="Groceries" tabIcon="cart"></ion-tab>\n\n  <ion-tab\n\n    [root]="tab2Root"\n\n    tabTitle="About"\n\n    tabIcon="information-circle"\n\n  ></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-2-groceries-app-skeleton-codermullins\groceries\src\pages\tabs\tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-3-groceries-adding-remove-items-codermullins\groceries\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n  <ion-tab [root]="tab1Root" tabTitle="Groceries" tabIcon="cart"></ion-tab>\n\n  <ion-tab\n\n    [root]="tab2Root"\n\n    tabTitle="About"\n\n    tabIcon="information-circle"\n\n  ></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-3-groceries-adding-remove-items-codermullins\groceries\src\pages\tabs\tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -98,9 +98,9 @@ var AboutPage = /** @class */ (function () {
     }
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-2-groceries-app-skeleton-codermullins\groceries\src\pages\about\about.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title> About </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <h1><strong>Name: </strong>Christopher Mullins</h1>\n\n  <p><strong>Id: </strong>cmullins3 or 1109309</p>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-2-groceries-app-skeleton-codermullins\groceries\src\pages\about\about.html"*/
+            selector: 'page-about',template:/*ion-inline-start:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-3-groceries-adding-remove-items-codermullins\groceries\src\pages\about\about.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title> About </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <h1><strong>Name: </strong>Christopher Mullins</h1>\n\n  <p><strong>Id: </strong>cmullins3 or 1109309</p>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-3-groceries-adding-remove-items-codermullins\groceries\src\pages\about\about.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], AboutPage);
     return AboutPage;
 }());
@@ -133,9 +133,9 @@ var ContactPage = /** @class */ (function () {
     }
     ContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-2-groceries-app-skeleton-codermullins\groceries\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Contact\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list>\n\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n\n    <ion-item>\n\n      <ion-icon name="ionic" item-start></ion-icon>\n\n      @ionicframework\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-2-groceries-app-skeleton-codermullins\groceries\src\pages\contact\contact.html"*/
+            selector: 'page-contact',template:/*ion-inline-start:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-3-groceries-adding-remove-items-codermullins\groceries\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Contact\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list>\n\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n\n    <ion-item>\n\n      <ion-icon name="ionic" item-start></ion-icon>\n\n      @ionicframework\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-3-groceries-adding-remove-items-codermullins\groceries\src\pages\contact\contact.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], ContactPage);
     return ContactPage;
 }());
@@ -163,16 +163,92 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var HomePage = /** @class */ (function () {
-    function HomePage(navCtrl) {
+    function HomePage(navCtrl, toastCtrl, alertCtrl) {
         this.navCtrl = navCtrl;
+        this.toastCtrl = toastCtrl;
+        this.alertCtrl = alertCtrl;
+        this.title = "Grocery List";
+        this.items = [
+            {
+                name: "Milk",
+                section: "Dairy",
+                quantity: 1
+            },
+            {
+                name: "Steak",
+                section: "Meat",
+                quantity: 4
+            },
+            {
+                name: "Rice",
+                section: "International",
+                quantity: 4
+            },
+            {
+                name: "Chips",
+                section: "Snacks",
+                quantity: 2
+            }
+        ];
     }
+    HomePage.prototype.deleteItem = function (item, index) {
+        console.log("removing item - ", item, index);
+        var toast = this.toastCtrl.create({
+            message: "Removing Item - " + index + "...",
+            duration: 3000
+        });
+        toast.present();
+        this.items.splice(index, 1);
+    };
+    HomePage.prototype.addItem = function () {
+        console.log("Add new item");
+        this.showAddItemPrompt();
+    };
+    HomePage.prototype.showAddItemPrompt = function () {
+        var _this = this;
+        var prompt = this.alertCtrl.create({
+            title: "Add new item",
+            message: "Enter a new item for the list",
+            inputs: [
+                {
+                    name: "name",
+                    placeholder: 'Name'
+                },
+                {
+                    name: "section",
+                    placeholder: 'Section'
+                },
+                {
+                    name: "quantity",
+                    placeholder: 'Quantity'
+                }
+            ],
+            buttons: [
+                {
+                    text: "Cancel",
+                    handler: function (data) {
+                        console.log("Canceled");
+                    }
+                },
+                {
+                    text: "Save",
+                    handler: function (item) {
+                        console.log("Saved clicked", item);
+                        _this.items.push(item);
+                    }
+                }
+            ]
+        });
+        prompt.present();
+    };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-2-groceries-app-skeleton-codermullins\groceries\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Grocery List</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item-sliding>\n\n      <ion-item>\n\n        <h2>Milk</h2>\n\n        <p>Dairy</p>\n\n        <p>1</p>\n\n      </ion-item>\n\n      <ion-item-options>\n\n        <button ion-button color="primary">\n\n          <ion-icon name="trash"></ion-icon>\n\n          Delete\n\n        </button>\n\n      </ion-item-options>\n\n    </ion-item-sliding>\n\n    <ion-item-sliding>\n\n      <ion-item>\n\n        <h2>Steaks</h2>\n\n        <p>Meat</p>\n\n        <p>4</p>\n\n      </ion-item>\n\n      <ion-item-options>\n\n        <button ion-button color="primary">\n\n          <ion-icon name="trash"></ion-icon>\n\n          Delete\n\n        </button>\n\n      </ion-item-options>\n\n    </ion-item-sliding>\n\n    <ion-item-sliding>\n\n      <ion-item>\n\n        <h2>Rice</h2>\n\n        <p>International</p>\n\n        <p>5</p>\n\n      </ion-item>\n\n      <ion-item-options>\n\n        <button ion-button color="primary">\n\n          <ion-icon name="trash"></ion-icon>\n\n          Delete\n\n        </button>\n\n      </ion-item-options>\n\n    </ion-item-sliding>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-2-groceries-app-skeleton-codermullins\groceries\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-3-groceries-adding-remove-items-codermullins\groceries\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item-sliding *ngFor="let item of items; let i = index">\n\n      <ion-item>\n\n        <h2>{{item.name}}</h2>\n\n        <p>{{item.section}}</p>\n\n        <p>{{item.quantity}}</p>\n\n      </ion-item>\n\n      <ion-item-options>\n\n        <button\n\n          ion-button\n\n          color="primary"\n\n          type="button"\n\n          (click)="deleteItem(item, i)"\n\n        >\n\n          <ion-icon name="trash"></ion-icon>\n\n          Delete\n\n        </button>\n\n      </ion-item-options>\n\n    </ion-item-sliding>\n\n  </ion-list>\n\n  <ion-fab right bottom>\n\n    <button ion-fab mini (click)="addItem()">\n\n      <ion-icon name="add"></ion-icon>\n\n    </button>\n\n  </ion-fab>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-3-groceries-adding-remove-items-codermullins\groceries\src\pages\home\home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ToastController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object])
     ], HomePage);
     return HomePage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -238,11 +314,11 @@ var AppModule = /** @class */ (function () {
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: []
                 })
             ],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_4__pages_about_about__["a" /* AboutPage */],
@@ -253,7 +329,7 @@ var AppModule = /** @class */ (function () {
             providers: [
                 __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__["a" /* SplashScreen */],
-                { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
+                { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
             ]
         })
     ], AppModule);
@@ -299,9 +375,9 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-2-groceries-app-skeleton-codermullins\groceries\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-2-groceries-app-skeleton-codermullins\groceries\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-3-groceries-adding-remove-items-codermullins\groceries\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\mrchr\OneDrive\Documents\GitHub\week-3-groceries-adding-remove-items-codermullins\groceries\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
 }());
