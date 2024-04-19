@@ -27,6 +27,16 @@
 
         <button
           ion-button
+          type="button"
+          color="light"
+          (click)="shareItem(item, i)"
+        >
+          <ion-icon name="share"></ion-icon>
+          Share
+        </button>
+
+        <button
+          ion-button
           color="danger"
           type="button"
           (click)="deleteItem(item, i)"
