@@ -3,6 +3,7 @@ import { NavController, ToastController, AlertController } from 'ionic-angular';
 import { GroceriesServiceProvider } from '../../providers/groceries-service/groceries-service';
 import { InputDialogServiceProvider } from '../../providers/input-dialog-service/input-dialog-service';
 import { SocialSharing } from '@ionic-native/social-sharing'
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'page-home',
@@ -12,26 +13,38 @@ export class HomePage {
 
   title = "Grocery List";
 
- 
+  items = [];
+  errorMessage: string;
+  dataChangedSubscription: Subscription;
 
-  constructor(public navCtrl: NavController, public toastCtrl: ToastController, public alertCtrl: AlertController, public dataService: GroceriesServiceProvider, public inputService: InputDialogServiceProvider, public socialSharing: SocialSharing) {
+  constructor(public navCtrl: NavController, public toastCtrl: ToastController, public alertCtrl: AlertController, public inputService: InputDialogServiceProvider, public socialSharing: SocialSharing, public dataService: GroceriesServiceProvider) {
+    this.dataChangedSubscription = dataService.dataChanged$.subscribe((dataChanged: boolean) => {
 
+        this.loadItems();
+
+    })
+  }
+
+
+  ionViewDidLoad() {
+    this.loadItems()
+  }
+
+  ionViewDidLeave() {
+    if(this.dataChangedSubscription) {
+      this.dataChangedSubscription.unsubscribe();
+    }
   }
 
   loadItems() {
-    return this.dataService.getItems();
+   this.dataService.getItems()
+    .subscribe(
+      items => this.items =items,
+      error => this.errorMessage =<any>error);
   }
 
-  deleteItem(item, index) {
-    console.log("removing item - ", item, index);
-    const toast = this.toastCtrl.create({
-      message: "Removing Item - " + index + "...",
-      duration: 3000
-    });
-    toast.present();
-
-    this.dataService.deleteItem(index);
-    
+  deleteItem(id) {
+    this.dataService.deleteItem(id);
   }
 
   shareItem(item, index) {
@@ -51,7 +64,7 @@ export class HomePage {
 
    }).catch((error) => {
     console.error("Error Sharing ", error);
-   })
+   });
     
   }
 
@@ -59,7 +72,7 @@ export class HomePage {
   editItem(item, index) {
     console.log("Edit item - ", item, index);
     const toast = this.toastCtrl.create({
-      message: "Editing Item - " + index + "...",
+      message: "Editing Item - " + item._id + "...",
       duration: 3000
     });
     toast.present();
