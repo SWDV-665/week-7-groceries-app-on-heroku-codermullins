@@ -4,7 +4,8 @@
   "description": "Groceries server using Mongoose",
   "main": "server.js",
   "scripts": {
-    "start": "node ./groceries-server/server.js"
+    "start": "node ./groceries-server/server.js",
+    "install": "cd groceries && npm install && cd .."
   },
   "devDependencies": {
     "body-parser": "1.18.3",
