@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { AlertController } from 'ionic-angular';
 import { GroceriesServiceProvider } from '../groceries-service/groceries-service';
+import { AlertController } from '@ionic/angular';
 
 /*
   Generated class for the InputDialogServiceProvider provider.
@@ -16,9 +16,9 @@ export class InputDialogServiceProvider {
     console.log('Hello InputDialogServiceProvider Provider');
   }
 
-  showPrompt(item?, index?) {
-    const prompt = this.alertCtrl.create({
-      title: item ? "Edit item" : "Add New item",
+  async showPrompt(item?, index?) {
+    const prompt = await this.alertCtrl.create({
+      header: item ? "Edit item" : "Add New item",
       message: item ? "Edit item in the list" : "Please Add New Item",
       inputs: [
         {
@@ -58,7 +58,7 @@ export class InputDialogServiceProvider {
         }
       ]
     });
-    prompt.present();
+    await prompt.present();
   }
 
 }

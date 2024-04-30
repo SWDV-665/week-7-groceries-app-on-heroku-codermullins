@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
-import { map, catchError } from 'rxjs/operators';
-import { Subject } from 'rxjs';
+import { Subject, Observable, throwError, map, catchError, tap } from 'rxjs';
+
 
 /*
   Generated class for the GroceriesServiceProvider provider.
@@ -29,8 +28,8 @@ export class GroceriesServiceProvider {
   }
 
   getItems(): Observable<object[]> {
-    return this.http.get(this.baseURL + '/api/groceries').pipe(
-      map(this.extractData),
+    return this.http.get<object[]>(this.baseURL + '/api/groceries').pipe(
+      tap((_) => this.extractData),
       catchError(this.handleError)
     );
   }
@@ -53,7 +52,7 @@ export class GroceriesServiceProvider {
       errMsg = error.message ? error.message : error.toString();
     }
     console.error(errMsg);
-    return Observable.throw(errMsg);
+    return throwError(errMsg);
   }
 
   deleteItem(id) {
