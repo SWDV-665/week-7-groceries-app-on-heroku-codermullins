@@ -8,14 +8,15 @@
     "install": "cd groceries && npm install && cd .."
   },
   "devDependencies": {
-    "body-parser": "1.18.3",
-    "cors": "2.8.4",
-    "method-override": "2.3.10",
-    "morgan": "1.9.0"
+
   },
   "dependencies": {
     "express": "^4.19.2",
     "mongoose": "^6.12.8",
+    "body-parser": "1.18.3",
+    "cors": "2.8.4",
+    "method-override": "2.3.10",
+    "morgan": "1.9.0",
     "mongodb": "^6.5.0"
   }
 }
