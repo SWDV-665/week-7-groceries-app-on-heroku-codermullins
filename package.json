@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node ./groceries-server/server.js",
-    "build": "cd groceries && npm install && cd .."
+    "install": "cd groceries && npm install && cd .."
   },
   "devDependencies": {
     "body-parser": "1.18.3",
