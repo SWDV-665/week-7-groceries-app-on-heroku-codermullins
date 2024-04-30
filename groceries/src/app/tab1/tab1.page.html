@@ -5,7 +5,9 @@
 </ion-header>
 
 <ion-content padding>
-  <h3 text-center *ngIf="items?.length === 0;">No Items in the List!</h3>
+  <h3 horizontal="center" *ngIf="items?.length === 0 || items == null">
+    No Items in the List!
+  </h3>
 
   <ion-list>
     <ion-item-sliding *ngFor="let item of items; let i = index">
