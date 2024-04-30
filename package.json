@@ -1,17 +1,20 @@
 {
-  "name": "week-7-groceries-app-on-heroku-codermullins",
-  "version": "1.0.0",
-  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/9urKZsdN)",
-  "main": "",
+  "name": "groceries-server",
+  "version": "0.0.1",
+  "description": "Groceries server using Mongoose",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm start --prefix groceries-server",
-    "build": "cd groceries-server && npm install && npm run build"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "1.18.3",
+    "cors": "2.8.4",
+    "express": "4.16.3",
+    "method-override": "2.3.10",
+    "mongoose": "^6.5.2",
+    "morgan": "1.9.0"
+  },
   "dependencies": {
-    "express": "^4.19.2"
+    "mongodb": "^6.5.0"
   }
 }
