@@ -8,7 +8,8 @@ var cors = require("cors");
 
 // Configuration
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/groceries"
+  process.env.MONGODB_URI ||
+    "mongodb+srv://cmullins3:Madness08@cluster2.nksxwlv.mongodb.net/groceries?retryWrites=true&w=majority&appName=Cluster2"
 );
 
 app.use(bodyParser.urlencoded({ extended: "true" }));

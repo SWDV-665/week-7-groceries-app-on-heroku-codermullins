@@ -10,7 +10,7 @@
   </h3>
 
   <ion-list>
-    <ion-item-sliding *ngFor="let item of items; let i = index">
+    <ion-item-sliding *ngFor="let item of items; index as i">
       <ion-item>
         <ion-label
           ><h2>{{item.name}}</h2>
